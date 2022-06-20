@@ -3,93 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <title>Alena CV</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td> <img src="фото.jpg" width="200" alt="мое фото">
-            </td>
-            <td>
+    <div class="CONTAINER"> 
+        <div class="info">  
+            <img src="фото.jpg"  alt="мое фото" class="foto">         
+            
+            <div class="info-text">
                 <h1> Алена Павлова</h1>   
                 <p><em> Я хочу выучить <strong>язык программирования JS</strong></em></strong></p>
                 <p>Для этого мне надо заниматься каждый день по видеоурокам</p>
                 
-            </td>
-        </tr>
-    </table>
- 
- <hr>
+                <h4>Мои соц сети</h4>
+            
+                    <a href="http://kangaroo.mbmd.ru/remainders/" target="_blank">Продажи</a>
+                    |
+                    <a href="https://www.youtube.com/watch?v=DjDL5cjLYwE" target="_blank">Ютюб</a>
+             </ul>
+            </div>
+        </div>  
+        
 
- <h2>Мои соц сети</h2>
- <ul type="disck">
-     <li><a href="http://kangaroo.mbmd.ru/remainders/"target="_blank">Продажи</a></li>
-     <li><a href="https://www.youtube.com/watch?v=DjDL5cjLYwE"target="_blank">Ютюб<a></li>
- </ul>
+    
 
- <h2>Мои хобби</h2>
- <ol type="I">
- <li>Садоводство</li>
- <li>Программирование</li>
- <li>Чтение</li>
-</ol>
+        <div class="card bg-yellow">
 
-<hr>
+        <h2>Мои хобби</h2>
+        <ol class="list">
+         <li>Садоводство</li> 
+         <li>Программирование</li>
+         <li>Чтение</li>
+        </ol>
+        
+        </div>
+        
+       <div class="card bg-green">
 
-<h2>Опыт работы</h2>
-<table border="1">
-    <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-    <tr>
-        <td>British American Tobacoo</td>
-        <td>Ассистент офиса</td>
-        <td>2019-2020</td>
-    </tr>
-<tr>
-  <td>ПАО Сбербанк</td>  
-  <td>Мобильный менеджер по продажам</td> 
-  <td>2020-2021</td> 
-</tr>
-<tr>
-    <td>Bauer</td>
-    <td>Презентант</td>
-    <td>04/2021-09/2021</td>
-</tr>
-<tr>
-    <td>Samsung</td>
-    <td>Промоутер бренда</td>
-    <td>10/2021-2022</td>
-</tr>
-</table>
-<hr>
-<h2>Мои работы</h2>
-<a href="Работа.html"target="_blank">Посмотреть список</a>
-<hr>
-<h2>Связаться со мной</h2>
-<form action="/">
+        <h2>Опыт работы</h2> 
+        <table  class="table">
+            <tr>
+                <th>Компания</th>
+                <th>Должность</th>
+                <th>Год</th>
+            </tr>
+            <tr>
+                <td>British American Tobacoo</td>
+                <td>Ассистент офиса</td>
+                <td>2019-2020</td>
+            </tr>
+            <tr>
+                <td>ПАО Сбербанк</td>  
+                <td>Мобильный менеджер по продажам</td> 
+                <td>2020-2021</td>
+            </tr>
+            <tr>
+                <td>Bauer</td>
+                <td>Презентант</td>
+                <td>04/2021-09/2021</td>
+            </tr>
+            <tr>
+                <td>Samsung</td>
+                <td>Промоутер бренда</td>
+                <td>10/2021-2022</td>
+            </tr>
+        </table>
 
-<label for="name">Ваше имя::</label>
-<input type="text" id="name"
-placeholder="Введите Ваше имя...">
+        </div>
 
-<br>
+        <div class="card bg-red">
 
-<label for="email">Ваш email:</label>
-<input type="email" id="email"
-placeholder="Введите email">
+        <h2>Мои работы</h2>
+      
+        <ul class="link-list">
+            <li><a href="http://kangaroo.mbmd.ru/remainders/" target="_blank">Продажи</a></li>
+            <li><a href="https://samsung.ispringlearn.ru/courses" target="_blank"> Обучающий портал </a></li>
 
-<br>
+        </ul>
+        
+        </div>  
+        
+        <div class="contact">
 
-<label for="text">Ваше сообщение</label>
-<br>
-<textarea  id="text" name="" id="" cols="20" rows="5"></textarea>
+            <h2>Связаться со мной</h2>
+            
+            <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name"
+                    placeholder="Введите Ваше имя...">
+                </div>    
+                
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email"
+                    placeholder="Введите email">
+                </div>    
+                
+            </div>    
+                <div class="form-group"> 
+                    <label for="text">Ваше сообщение</label>
+                    
+                    <textarea  id="text" name="" id="" cols="20" rows="5"></textarea>
+                </div> 
+                    <input  class="btn" type="submit" value="Связаться">
+                
+            </form>
+         
+        </div>
 
-<br>
+    <!-- РАЗГРАНИЧЕНИЕ ОБЛАСТЕЙ РАМКАМИ И ЦВЕТОМ -->
 
-<input type="submit" value="Связаться">
+    <!-- <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
-</form>
+    </div> -->
+
+<div class="position">
+    <div class="box"></div>
+</div>
+
+</div>
+
+<div style="margin-bottom: 500px"></div>
+
 </body>
 </html>
