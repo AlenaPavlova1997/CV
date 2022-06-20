@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* * {
+padding: 0;
+margin: 0;
+} */
+
+
+BODY { background-color: 	#e7dbdb; 
+color: #0f1f40f1;
+font-size: 16;
+font-weight: normal;
+font-family:  'Roboto Condensed', sans-serif; 
+/* font-family: Arial, Helvetica, sans-serif;
+
+/* FONT: NORMAL 16PX  'Roboto Condensed', sans-serif; */
+}  
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+a:active {
+
+    color: blue;
+}
+
+a:visited {
+    color: grey;
+}
+
+
+.foto {  
+ width: 200px;
+ border-radius: 20px;
+ box-shadow: 4px 4px 14px rgba(0,0,0,0.25);     
+}
+ 
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+@media (max-width:700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+    }
+
+
+.info-text {
+margin-left: 40px;
+}
+
+.info-text h4 {
+margin-bottom: 10px;
+}
+
+.info p {
+color: #a80000;
+margin: 0;
+font-style: italic;
+font-weight: bold;
+text-decoration:none;
+/* text-transform: uppercase; */
+/* letter-spacing: 5px;
+word-spacing: 30px; */
+}
+
+/* BOX MODEL */
+
+    .CONTAINER {  
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+   }
+
+    /* .social {
+
+    background-color:#e6ecf8f1; */
+    /* Варианты отступов внутри */
+        /* padding: 20px; */
+        /* padding: 15px 40px; */
+        /* padding: 15px 10px 20px 40px; */
+        /* padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-left: 50px; */
+
+    /* Примеры контуров */
+/* 
+        border: 10px solid #dd8cd0;
+        border-bottom-style: dotted;
+        border-top-width: 20px;
+        border-right-color: rgb(235, 245, 97); */
+
+    /* Отступ от основного текста */
+
+        /* margin: 30px; */
+        /* margin-top: 10px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        margin-left: 50px; */
+    /* } */
+/*       */
+    
+    /* РАЗГРАНИЧЕНИЕ ОБЛАСТЕЙ ПО ГОРИЗОНТАЛИ */
+    
+    /* .box-model > div {
+
+        float: left;
+        background: #e95a5a;
+        height: 200px;
+        border: 4px solid #128f31;
+        width: 25%;
+        box-sizing: border-box;
+     } */
+
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+
+.card {
+    padding: 15px 20px;
+    /* background: #a80000; */
+    margin-bottom: 20px;
+    border-radius: 20px;
+     }
+
+     .card h2 {
+
+        margin-bottom: 20px;
+     }
+    
+     .list {
+    padding: 0 20px;
+    /* list-style: none; */
+     }
+
+     .list li {
+        color: #86898f;
+        margin-bottom: 10px;
+     }
+
+     .table {
+        width:100%;
+   }
+    
+   .table td {
+    padding-bottom: 10px;
+   }
+
+   .table th {
+    padding-bottom: 10px;
+   }
+
+
+   .table td:nth-child(2), .table td:nth-child(3)
+   {
+    color: #86898f;
+   }
+
+   /* .table tr:nth-child(odd){
+    background: #e29842;
+   } */
+
+   .link-list {
+list-style: none;
+padding: 0;
+   }
+
+   .link-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+   }
+
+   .contact h2 {
+    text-align: center;
+   }
+
+   .form-group label {
+display: block;
+font-size: 14px;
+font-weight: bold;
+   }
+
+   .form-group input,
+   .form-group textarea {
+width: 100%;
+box-sizing: border-box;
+border: none;
+background: transparent;
+border-bottom: 1px solid #ccc;
+color: #86898f;
+padding: 15px 0 10px;
+outline: none;
+font-family: inherit;
+/* ^означает, что стиль шрифта наследуется^    */
+}
+
+.row {
+display: flex;
+margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+    margin: right 0;;
+}
+
+/* :last-child означает последний из блоков */
+
+.btn {
+background: #2e3749f1;
+border: none;
+padding: 15px 20px;
+font-family: inherit;
+color: rgb(236, 247, 243);
+font-size: 15px;
+border-radius: 20%;
+cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Позиция для банеров или навигации */
+
+/* /* .position {
+position: relative;
+border: 4px solid #a80000;
+margin-top: 40px;
+padding: 20px;
+height: 300px;
+} */
+
+.box {
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+width: 10%;
+background: palevioletred;
+} 
